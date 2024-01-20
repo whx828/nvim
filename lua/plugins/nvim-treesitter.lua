@@ -14,31 +14,25 @@ return {
     end,
     config = function()
       require("nvim-treesitter.configs").setup({
+        -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
+        auto_install = false,
         sync_install = false,
-        ignore_install = { "javascript" },
+        ignore_install = {},
         modules = {},
         highlight = {
           enable = true,
-          additional_vim_regex_highlighting = false,
         },
         indent = { enable = true },
         auto_install = true,
         ensure_installed = {
           "c",
           "cpp",
-          "html",
           "javascript",
           "json",
           "lua",
-          "luadoc",
-          "luap",
           "markdown",
-          "markdown_inline",
           "python",
-          "query",
           "regex",
-          "tsx",
-          "typescript",
           "vim",
           "vimdoc",
           "yaml",
@@ -99,15 +93,6 @@ return {
               ["]f"] = { query = "@function.outer", desc = "Next function" },
               ["]c"] = { query = "@class.outer", desc = "Next class" },
               ["]p"] = { query = "@parameter.inner", desc = "Next parameter" },
-            },
-          },
-          swap = {
-            enable = true,
-            swap_next = {
-              ["<leader>a"] = "@parameter.inner",
-            },
-            swap_previous = {
-              ["<leader>A"] = "@parameter.inner",
             },
           },
         },

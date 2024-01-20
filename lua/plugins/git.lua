@@ -91,4 +91,18 @@ return {
 
   -- not git, but it's okay
   "mbbill/undotree",
+
+  -- I like it
+  {
+    'NeogitOrg/neogit',
+    dependencies = {
+      'nvim-lua/plenary.nvim',         -- required
+      'nvim-telescope/telescope.nvim', -- optional
+      'sindrets/diffview.nvim',        -- optional
+      'ibhagwan/fzf-lua',              -- optional
+    },
+    config = function()
+      require('neogit').setup {}
+    end,
+  },
 }

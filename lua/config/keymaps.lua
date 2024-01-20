@@ -35,22 +35,25 @@ map("n", "j", "gj", opts)
 map("n", "k", "gk", opts)
 
 -- Exit on jj and jk
-map("i", "jj", "<ESC>", opts)
-map("i", "jk", "<ESC>", opts)
+-- map("i", "jj", "<ESC>", opts)
+-- map("i", "jk", "<ESC>", opts)
 
 -- Move to start/end of line
 map({ 'n', 'x', 'o' }, 'H', '^', opts)
 map({ 'n', 'x', 'o' }, 'L', 'g_', opts)
 
 -- Navigate buffers
-map("n", "<Right>", ":bnext<CR>", opts)
-map("n", "<Left>", ":bprevious<CR>", opts)
+-- map("n", "<Right>", ":bnext<CR>", opts)
+-- map("n", "<Left>", ":bprevious<CR>", opts)
 
 -- Panes resizing
 map("n", "+", ":vertical resize +5<CR>")
 map("n", "_", ":vertical resize -5<CR>")
 map("n", "=", ":resize +5<CR>")
 map("n", "-", ":resize -5<CR>")
+
+map("n", "b", ":m -2<CR>")
+map("n", "B", ":m +1<CR>")
 
 -- Map enter to ciw in normal mode
 map("n", "<CR>", "ciw", opts)

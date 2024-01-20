@@ -174,13 +174,21 @@ return {
               "*/lua-language-server/*",
             },
           },
+          ast_grep = {
+            command = {
+                "sg",
+                "--json=stream",
+            }, -- must have --json=stream
+            grep_open_files = false, -- search in opened files
+            lang = nil, -- string value, specify language for ast-grep `nil` for default
+          }
         },
       })
       telescope.load_extension("fzf")
       telescope.load_extension("ui-select")
-      --telescope.load_extension("refactoring")
-      --telescope.load_extension("dap")
+      telescope.load_extension("dap")
       telescope.load_extension("frecency")
+      telescope.load_extension("ast_grep")
     end,
   },
 }
