@@ -68,6 +68,7 @@ return {
           adapter = cfg.get_codelldb_adapter(codelldb_path, liblldb_path),
         },
       }
+      vim.lsp.inlay_hint.enable()
     end
   },
   {
@@ -96,22 +97,11 @@ return {
   },
   -- crates
   {
-    "saecki/crates.nvim",
-    version = "v0.3.0",
-    lazy = true,
-    ft = { "rust", "toml" },
-    event = { "BufRead", "BufReadPre", "BufNewFile" },
-    dependencies = { "nvim-lua/plenary.nvim" },
+    'saecki/crates.nvim',
+    tag = 'stable',
+    event = { "BufRead Cargo.toml" },
     config = function()
-      require("crates").setup {
-        -- null_ls = {
-        --   enabled = true,
-        --   name = "crates.nvim",
-        -- },
-        popup = {
-          border = "rounded",
-        },
-      }
+        require('crates').setup()
     end,
   },
 }

@@ -51,7 +51,6 @@ local mappings = {
     m = { "<cmd>RustLsp view mir <CR>", "View MIR" },
     i = { "<cmd>lua require('ferris.methods.view_item_tree')<CR>", "View Item Tree" },
     M = { "<cmd>lua require('ferris.methods.view_memory_layout')<CR>", "View Memory Layout" },
-    t = { "<cmd>lua require('lsp-inlayhints').toggle() <CR>", "View Inlay Hints" },
     f = { "<cmd>Lspsaga finder <CR>", "Show LSP methods search result" },
     a = { "<cmd>Lspsaga code_action <CR>", "Show Rust code action" },
   }
