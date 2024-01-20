@@ -100,7 +100,6 @@ return {
         { name = "luasnip" },
         { name = "buffer" },
         { name = "path" },
-        { name = "calc" },
         { name = "emoji" },
         { name = "treesitter" },
         { name = "crates" },

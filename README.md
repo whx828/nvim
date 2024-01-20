@@ -1,1 +1,3 @@
-# nvim
+# Neovim Configuration
+
+Always a WIP.

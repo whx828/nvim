@@ -17,12 +17,10 @@ return {
         section_separators = { left = "", right = "" },
         disabled_filetypes = {
           statusline = {
-            "alfa-nvim",
             "help",
             "neo-tree",
             "Trouble",
             "spectre_panel",
-            "toggleterm",
           },
           winbar = {},
         },

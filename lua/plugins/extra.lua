@@ -75,6 +75,7 @@ return {
       require("breadcrumbs").setup()
     end,
   },
+
   -- Simple winbar/statusline plugin that shows your current code context
   {
     "SmiteshP/nvim-navic",
@@ -122,8 +123,8 @@ return {
     end,
   },
 
+  -- `-` open
   {
-    -- `-` open
     'stevearc/oil.nvim',
     opts = {},
     -- Optional dependencies
@@ -184,5 +185,14 @@ return {
       }
     end,
     dependencies = { { 'nvim-tree/nvim-web-devicons' } }
+  },
+  {
+    "folke/flash.nvim",
+    event = "VeryLazy",
+    opts = {},
+    keys = {
+      { "<leader>f", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
+      { "<leader>F", mode = { "n", "x", "o" }, function() require("flash").treesitter() end, desc = "Flash Treesitter" },
+    },
   },
 }

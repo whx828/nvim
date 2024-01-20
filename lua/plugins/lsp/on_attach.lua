@@ -1,5 +1,6 @@
 M = {}
 M.on_attach = function(_, bufnr)
+  vim.lsp.inlay_hint.enable()
   local nmap = function(keys, func, desc)
     if desc then
       desc = "LSP: " .. desc
