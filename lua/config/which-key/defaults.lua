@@ -23,7 +23,6 @@ return {
     c = { "<cmd>Telescope git_commits<cr>", "Git commits" },
     B = { "<cmd>Telescope git_branches<cr>", "Git branches" },
     S = { "<cmd>Telescope git_stash<cr>", "Git stash" },
-    e = { "<cmd>Telescope frecency<cr>", "Frecency" },
     b = { "<cmd>Telescope buffers<cr>", "Buffers" },
     d = {
       name = "+DAP",

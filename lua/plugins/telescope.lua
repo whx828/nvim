@@ -11,7 +11,6 @@ return {
       "nvim-telescope/telescope-ui-select.nvim",
       "nvim-telescope/telescope-dap.nvim",
       "kkharji/sqlite.lua",
-      "nvim-telescope/telescope-frecency.nvim",
     },
     config = function()
       local telescope = require("telescope")
@@ -163,17 +162,6 @@ return {
               },
             }),
           },
-          frecency = {
-            default_workspace = "CWD",
-            show_scores = true,
-            show_unindexed = true,
-            disable_devicons = false,
-            ignore_patterns = {
-              "*.git/*",
-              "*/tmp/*",
-              "*/lua-language-server/*",
-            },
-          },
           ast_grep = {
             command = {
                 "sg",
@@ -187,7 +175,6 @@ return {
       telescope.load_extension("fzf")
       telescope.load_extension("ui-select")
       telescope.load_extension("dap")
-      telescope.load_extension("frecency")
       telescope.load_extension("ast_grep")
     end,
   },

@@ -44,7 +44,7 @@ local mappings = {
   },
   r = {
     name = "+[R]ust",
-    s = { "<cmd>RustLsp syntaxTree <CR>", "View Syntax Tree" },
+    s = { "<cmd>InspectTree <CR>", "View Syntax Tree" },
     e = { "<cmd>RustLsp explainError <CR>", "Explain errors" },
     r = { "<cmd>RustLsp ssr <CR>", "Structural Search Replace" },
     h = { "<cmd>RustLsp view hir <CR>", "View HIR" },
