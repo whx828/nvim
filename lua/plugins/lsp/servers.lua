@@ -7,11 +7,6 @@ return {
       },
     },
   },
-  terraformls = {
-    cmd = { "terraform-ls" },
-    arg = { "server" },
-    filetypes = { "terraform", "tf", "terraform-vars" },
-  },
   lua_ls = {
     Lua = {
       telemetry = { enable = false },
@@ -33,7 +28,7 @@ return {
   vimls = {
     filetypes = { "vim" },
   },
-  tsserver = {},
   gopls = {},
-  pyright = {},
+  ast_grep = {},
+  zls = {},
 }

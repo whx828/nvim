@@ -49,10 +49,11 @@ local mappings = {
     r = { "<cmd>RustLsp ssr <CR>", "Structural Search Replace" },
     h = { "<cmd>RustLsp view hir <CR>", "View HIR" },
     m = { "<cmd>RustLsp view mir <CR>", "View MIR" },
+    a = { "<cmd>RustLsp codeAction <CR>", "Show Rust code action" },
+    c = { "<cmd>RustLsp openCargo <CR>", "Open Cargo.toml" },
     i = { "<cmd>lua require('ferris.methods.view_item_tree')<CR>", "View Item Tree" },
     M = { "<cmd>lua require('ferris.methods.view_memory_layout')<CR>", "View Memory Layout" },
     f = { "<cmd>Lspsaga finder <CR>", "Show LSP methods search result" },
-    a = { "<cmd>Lspsaga code_action <CR>", "Show Rust code action" },
   }
 }
 

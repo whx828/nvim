@@ -1,11 +1,6 @@
 return {
   {
-    "xero/miasma.nvim",
-    branch = "dev",
-    dependencies = {
-      "rktjmp/lush.nvim",
-      "rktjmp/shipwright.nvim",
-    },
+    "whx828/miasma.nvim",
     lazy = false,
     priority = 1000,
     config = function()

@@ -26,7 +26,6 @@ return {
         ensure_installed = {
           "c",
           "cpp",
-          "javascript",
           "json",
           "lua",
           "markdown",
@@ -40,8 +39,7 @@ return {
           "gomod",
           "gowork",
           "gosum",
-          "terraform",
-          "proto",
+          "zig",
         },
         incremental_selection = {
           enable = true,

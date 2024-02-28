@@ -122,23 +122,7 @@ return {
       })
     end,
   },
-
-  -- `-` open
-  {
-    'stevearc/oil.nvim',
-    opts = {},
-    -- Optional dependencies
-    dependencies = { 'nvim-tree/nvim-web-devicons' },
-    keys = {
-      { '-', '<cmd> Oil <CR>', desc = 'Open parent directory' },
-    },
-    config = function()
-      require('oil').setup()
-    end,
-  },
-  {
-    "nathom/filetype.nvim"
-  },
+  -- ast_grep
   {
     "Marskey/telescope-sg",
   },

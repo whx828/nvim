@@ -24,6 +24,7 @@ return {
     B = { "<cmd>Telescope git_branches<cr>", "Git branches" },
     S = { "<cmd>Telescope git_stash<cr>", "Git stash" },
     b = { "<cmd>Telescope buffers<cr>", "Buffers" },
+    n = { "<cmd>Telescope current_buffer_fuzzy_find<cr>", "[N]ow buffer"},
     d = {
       name = "+DAP",
       c = { "<cmd>Telescope dap commands<cr>", "Dap Commands" },

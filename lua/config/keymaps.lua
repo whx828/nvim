@@ -52,20 +52,15 @@ map("n", "_", ":vertical resize -5<CR>")
 map("n", "=", ":resize +5<CR>")
 map("n", "-", ":resize -5<CR>")
 
-map("n", "b", ":m -2<CR>")
-map("n", "B", ":m +1<CR>")
+map("n", "m", ":m -2<CR>")
+map("n", "M", ":m +1<CR>")
 
 -- Map enter to ciw in normal mode
 map("n", "<CR>", "ciw", opts)
 map("n", "<BS>", 'ci', opts)
 
-map("n", "n", "nzzv", opts)
-map("n", "N", "Nzzv", opts)
 map("n", "*", "*zzv", opts)
 map("n", "#", "#zzv", opts)
 map("n", "g*", "g*zz", opts)
 map("n", "g#", "g#zz", opts)
-
--- search current buffer
-map("n", "<C-s>", ":Telescope current_buffer_fuzzy_find<CR>", opts)
 
