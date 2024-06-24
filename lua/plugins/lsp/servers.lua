@@ -1,12 +1,4 @@
 return {
-  jsonls = {
-    settings = {
-      json = {
-        schema = require("schemastore").json.schemas(),
-        validate = { enable = true },
-      },
-    },
-  },
   lua_ls = {
     Lua = {
       telemetry = { enable = false },
@@ -22,13 +14,4 @@ return {
       },
     },
   },
-  bashls = {
-    filetypes = { "sh", "zsh" },
-  },
-  vimls = {
-    filetypes = { "vim" },
-  },
-  gopls = {},
-  ast_grep = {},
-  zls = {},
 }
