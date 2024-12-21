@@ -1,6 +1,7 @@
 return {
   "folke/which-key.nvim",
   event = "VeryLazy",
+  dependencies = { "echasnovski/mini.icons" },
   lazy = true,
   opts = {
     plugins = {
@@ -61,14 +62,9 @@ return {
       filetypes = { "TelescopePrompt" },
     },
   },
-  config = function(_, opts)
-    local which_key = require("which-key")
-    which_key.setup(opts)
-    which_key.register(require('config.which-key.defaults'), {
-      mode = "n",
-      prefix = "<leader>",
-    })
-
-    which_key.register(require('config.which-key.non_leader'))
+  config = function()
+    local wk = require("which-key")
+    wk.add(require('config.which-key.defaults'))
+    -- wk.add(require('config.which-key.non_leader'))
   end
 }
